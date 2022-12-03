@@ -16,7 +16,7 @@ instr' (x, y, a) (d, n)
 
 main :: IO ()
 main = do
-    input <- lines <$> readFile "inputs/2021/02.txt"
+    input <- lines <$> readFile "inputs/02.txt"
 
     let xs = (\[x, y] -> (head x, read y)) . words <$> input
 

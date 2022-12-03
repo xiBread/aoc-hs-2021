@@ -10,7 +10,7 @@ incrs xs = sum [1 | (y, x) <- zip xs $ tail xs, x > y]
 
 main :: IO ()
 main = do
-    input <- lines <$> readFile "inputs/2021/01.txt"
+    input <- lines <$> readFile "inputs/01.txt"
 
     let xs = read <$> input
     let ys = map sum $ windows xs

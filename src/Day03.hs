@@ -25,7 +25,7 @@ ratings i a b = ratings (i + 1) a' b'
 
 main :: IO ()
 main = do
-    input <- lines <$> readFile "inputs/2021/03.txt"
+    input <- lines <$> readFile "inputs/03.txt"
 
     let os = [ones i input | i <- [0 .. 11]]
 
